@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/centerline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"></RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerline"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/group">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:text="Welcome to NotesApp"
+            android:fontFamily="@font/segoeui"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxCornerRadiusTopEnd="@dimen/cardview_default_elevation"
+            android:labelFor="@+id/mobileno">
+
+            <EditText
+                android:id="@+id/mobileno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="Enter moblie number"
+                android:autofillHints="phone"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/black"
+                android:hint="Enter the mobile number"
+                android:inputType="textPhonetic"></EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/centerline"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <com.chaos.view.PinView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:itemWidth="40dp"
+            app:itemHeight="40dp"
+            app:itemCount="6"
+            android:id="@+id/pinview"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:itemBackground="@color/white"
+            style="@style/PinWidget.PinView"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:cursorVisible="true"
+            app:cursorColor="@color/black"
+            app:hideLineWhenFilled="true"
+            app:itemSpacing="15dp"
+            app:itemRadius="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="235dp"
+            android:text="Send Otp"
+            android:fontFamily="@font/segoeui"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="@color/black">
+        </TextView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#FFC158"
+            android:id="@+id/otpbutton"
+            android:contentDescription="otp"
+            android:src="@drawable/arrow"
+            android:tint="@color/white">
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

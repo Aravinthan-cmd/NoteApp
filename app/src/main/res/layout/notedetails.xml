@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#faf7f7"
+    tools:context=".NotedetailsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailstoolbar"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F6F6F6"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="back_arrow"
+            android:src="@drawable/arrow_back"
+            android:id="@+id/detailsbackbutton"
+            app:fabCustomSize="40dp"
+            app:maxImageSize="30dp">
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F6F6F6"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="190dp"
+            android:contentDescription="delete"
+            android:id="@+id/createdeletebutton"
+            android:src="@drawable/delete"
+            app:fabCustomSize="40dp"
+            app:maxImageSize="30dp">
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F6F6F6"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:contentDescription="save"
+            android:id="@+id/createsavebutton"
+            android:src="@drawable/save"
+            app:fabCustomSize="40dp"
+            app:maxImageSize="30dp">
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@+id/detailstoolbar"
+        android:id="@+id/detailstitle"
+        android:textColorHint="@color/black">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/detailstitle">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:background="#faf7f7"
+            android:gravity="top|left"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_below="@+id/detailstoolbar"
+            android:padding="20dp"
+            android:id="@+id/detailscontent">
+        </TextView>
+    </LinearLayout>
+
+
+</RelativeLayout>

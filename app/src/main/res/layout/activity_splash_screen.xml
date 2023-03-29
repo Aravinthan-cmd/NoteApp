@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    tools:context=".SplashScreen">
+
+    <RelativeLayout
+        android:id="@+id/homecenterline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"></RelativeLayout>
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_above="@id/homecenterline"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/group"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homecenterline"
+        android:layout_marginTop="10dp"
+        android:text="Welcome to Notes"
+        android:fontFamily="@font/segoeui"
+        android:layout_centerInParent="true"
+        android:textSize="20dp"
+        android:textColor="#F6F6F6" />
+
+</RelativeLayout>

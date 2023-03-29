@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NoteApp</string>
+    <string name="title">Title</string>
+    <string name="deletebutten">deletebutten</string>
+    <string name="_29_12_1999">29/12/1999</string>
+    <string name="editbutton">editbutton</string>
+</resources>

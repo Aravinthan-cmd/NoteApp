@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardMaxElevation="5dp"
+        android:id="@+id/notecard">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/note"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/notetitle"
+                    android:padding="10dp"
+                    android:textSize="30sp"
+                    android:text="@string/title"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoeui">
+                </TextView>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:contentDescription="@string/deletebutten"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#01BFF9"
+                    android:src="@drawable/delete"
+                    android:id="@+id/carddelete"
+                    app:maxImageSize="30dp"
+                    app:fabCustomSize="40dp">
+
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/notecontent"
+                android:padding="10dp"
+                android:text="content"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/_29_12_1999"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/date">
+                </TextView>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/editbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="230dp"
+                    android:backgroundTint="#FF5858"
+                    android:contentDescription="@string/editbutton"
+                    android:src="@drawable/edit"
+                    app:fabCustomSize="50dp"
+                    app:maxImageSize="30dp">
+
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
